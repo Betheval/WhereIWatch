@@ -10,6 +10,7 @@
 ## Sobre la app
 
 **WhereIWatch** nace con la idea ser una guía en un mundo en el que cada vez se genera más contenido audiovisual y en el que cada vez aparecen más plataformas de streaming de video,ademas de conocer donde encontrar series, el usuario poseerá un perfil con el que tambien va a poder ver las ultimas noticias, puntuar y comentar por temporadas sus series favoritas.
+
 El adminsitrador tendrá a su disposición un dashboard para poder administrar usuarios, peliculas y noticias.
 
 ## Tecnologías
