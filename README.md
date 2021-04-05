@@ -30,4 +30,3 @@
 * [Web](https://github.com/BeTheVal/WhereIWatch/tree/main/WIW%20Web)
 * [Diario](#Diario)
 
-## Diario
