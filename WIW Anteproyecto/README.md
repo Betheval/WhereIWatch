@@ -5,7 +5,7 @@
 * [Sobre la app](#sobre-la-app)
 * [Tecnologías](#tecnologías)
 * [MockUp](#mockup)
-* * [Stylesheet](#stylesheet)
+  * [Stylesheet](#stylesheet)
   * [Maqueta móvil](#maqueta-móvil)
   * [Maqueta web](#maqueta-web)
 
