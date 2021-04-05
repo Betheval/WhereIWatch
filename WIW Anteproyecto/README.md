@@ -21,4 +21,21 @@ El adminsitrador tendrá a su disposición un dashboard para poder administrar u
 
 
 ## MockUp
+Puedes ver el trabajo completo usando AdobeXD y descargando el siguiente archivo: https://drive.google.com/file/d/1GygEQgYmelUSLAzhSlUA90tINZqf8FVP/view?usp=sharing
 
+
+## StyleSheet
+ <img src="https://github.com/BeTheVal/WhereIWatch/blob/main/WIW%20Anteproyecto/mockupimgs/Fonts.png" width="200"/>   <img src="https://github.com/BeTheVal/WhereIWatch/blob/main/WIW%20Anteproyecto/mockupimgs/Grupo%2070000.png" width="200"/>  
+
+
+
+
+
+## Maqueta móvil
+| <img src="https://github.com/BeTheVal/WhereIWatch/blob/main/WIW%20Anteproyecto/mockupimgs/Login.png" width="200"/> | <img src="https://github.com/BeTheVal/WhereIWatch/blob/main/WIW%20Anteproyecto/mockupimgs/Main%20Activity.png" width="200"/> | <img src="https://github.com/BeTheVal/WhereIWatch/blob/main/WIW%20Anteproyecto/mockupimgs/Novedades%20-%20Fragment.png" width="200"/> |
+|----|----|----|
+
+## Maqueta web
+
+| <img src="https://github.com/BeTheVal/WhereIWatch/blob/main/WIW%20Anteproyecto/mockupimgs/Homepage.png" width="200"/> | <img src="https://github.com/BeTheVal/WhereIWatch/blob/main/WIW%20Anteproyecto/mockupimgs/Dashboard%20-%20Estad%C3%ADsticas.png" width="200"/> | <img src="https://github.com/BeTheVal/WhereIWatch/blob/main/WIW%20Anteproyecto/mockupimgs/Dashboard%20%E2%80%93%20Gesti%C3%B3n%20de%20usuarios.png" width="200"/> |
+|----|----|----|
