@@ -23,7 +23,8 @@ El adminsitrador tendrá a su disposición un dashboard para poder administrar u
 
 
 ## MockUp
-Puedes ver el trabajo completo usando AdobeXD y descargando el siguiente archivo: https://drive.google.com/file/d/1GygEQgYmelUSLAzhSlUA90tINZqf8FVP/view?usp=sharing
+Puedes ver el trabajo completo usando AdobeXD y descargando el siguiente archivo: https://drive.google.com/file/d/1GygEQgYmelUSLAzhSlUA90tINZqf8FVP/view?usp=sharing  
+Tanto el estilo como los componentes estructurales están abiertos a cambios, se admiten sugerencias de estilo
 
 
 ## StyleSheet
