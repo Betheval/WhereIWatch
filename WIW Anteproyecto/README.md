@@ -5,6 +5,7 @@
 * [Sobre la app](#sobre-la-app)
 * [Tecnologías](#tecnologías)
 * [MockUp](#mockup)
+* * [Stylesheet](#stylesheet)
   * [Maqueta móvil](#maqueta-móvil)
   * [Maqueta web](#maqueta-web)
 
@@ -27,8 +28,8 @@ Puedes ver el trabajo completo usando AdobeXD y descargando el siguiente archivo
 Tanto el estilo como los componentes estructurales están abiertos a cambios, se admiten sugerencias de estilo
 
 
-## StyleSheet
- <img src="https://github.com/BeTheVal/WhereIWatch/blob/main/WIW%20Anteproyecto/mockupimgs/Fonts.png" width="200"/>   <img src="https://github.com/BeTheVal/WhereIWatch/blob/main/WIW%20Anteproyecto/mockupimgs/Grupo%2070000.png" width="200"/>  
+## Stylesheet
+ <img src="https://github.com/BeTheVal/WhereIWatch/blob/main/WIW%20Anteproyecto/mockupimgs/Fonts.png" width="600" />   <img src="https://github.com/BeTheVal/WhereIWatch/blob/main/WIW%20Anteproyecto/mockupimgs/Grupo%2070000.png" width="600"/>  
 
 
 
