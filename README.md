@@ -31,5 +31,5 @@
 
 
 ## Diario
-Puedes entrar para ver un timeline (Se puede cambiar si el profesorado lo estima oportuno)
+Puedes entrar para ver un timeline (Se puede cambiar si el profesorado lo estima oportuno)  
 https://www.tiki-toki.com/timeline/entry/1644775/Where-I-Watch/
