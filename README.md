@@ -6,7 +6,7 @@
     <img src="/Logo.png" alt="Logo" width="500" height="500">
   </a>
 
-  <h3 align="center">Where I Whatch</h3>
+  <h3 align="center">Where I Watch</h3>
 
   <p align="center">
     Encuentra la serie que buscas
