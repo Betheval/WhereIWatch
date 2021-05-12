@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_inicio"
+        android:icon="@drawable/outline_home_black_48"
+        android:title="Inicio"
+        />
+    <item
+        android:id="@+id/navigation_popular"
+        android:icon="@drawable/outline_notifications_black_48"
+        android:title="Popular"
+        />
+    <item
+        android:id="@+id/navigation_novedades"
+        android:icon="@drawable/outline_feed_black_48"
+        android:title="Novedades"
+        />
+    <item
+        android:id="@+id/navigation_milista"
+        android:icon="@drawable/outline_format_list_bulleted_black_48"
+        android:title="Mi lista"
+        />
+</menu>

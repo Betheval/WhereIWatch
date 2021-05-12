@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mvgp.whereiwatch">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/SplashTheme">
+        <activity android:name=".registro.RegistroActivity"></activity>
+        <activity
+            android:name=".NoticiasActivity"
+            android:label="@string/title_activity_noticias"
+            android:theme="@style/SplashTheme.NoActionBar" />
+        <activity android:name=".NoticiaActivity" />
+        <activity android:name=".PeliculaActivity" />
+        <activity
+            android:name=".pelicula.PeliculaActivity"
+            android:label="@string/title_activity_pelicula"
+            android:theme="@style/Theme.Whereiwatch" />
+        <activity
+            android:name=".onboarding.OnboardingActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".login.LoginActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:windowSoftInputMode="adjustNothing"
+        android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

@@ -1,0 +1,7 @@
+<resources>
+
+    <style name="Widget.SplashTheme.ButtonBar.Fullscreen" parent="">
+        <item name="android:background">@color/primaryTextColor</item>
+        <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
+    </style>
+</resources>

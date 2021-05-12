@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/black"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".list.ListFragment">
+
+    <SearchView
+        android:id="@+id/list_searchView"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:background="@color/white"
+        android:iconifiedByDefault="false"
+        android:queryHint="Buscar" />
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        >
+
+        <Button
+            android:id="@+id/radioButtonVisto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:textColor="@color/primaryTextColor"
+            android:clickable="true"
+            android:backgroundTint="@color/black"
+            android:gravity="center"
+            android:text="Visto" />
+
+        <Button
+            android:id="@+id/radioPendiente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:textColor="@color/primaryTextColor"
+            android:backgroundTint="@color/primaryLightColor"
+            android:gravity="center"
+            android:text="Pendiente" />
+    </RadioGroup>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_mylist"
+        android:layout_width="413dp"
+        android:background="@color/secondaryColor"
+        android:layout_height="571dp"
+        />
+
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

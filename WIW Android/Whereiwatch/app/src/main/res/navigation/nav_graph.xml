@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/firstFragmentOnBoard">
+
+    <fragment
+        android:id="@+id/firstFragmentOnBoard"
+        android:name="com.mvgp.whereiwatch.onboarding.FirstFragmentOnBoard"
+        android:label="fragment_first"
+        tools:layout="@layout/fragment_first" >
+        <action
+            android:id="@+id/action_firstFragmentOnBoard_to_secondFragmentOnBoard"
+            app:destination="@id/secondFragmentOnBoard" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondFragmentOnBoard"
+        android:name="com.mvgp.whereiwatch.onboarding.SecondFragmentOnBoard"
+        android:label="fragment_second"
+        tools:layout="@layout/fragment_second" />
+</navigation>

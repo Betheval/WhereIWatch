@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_after_login"
+    app:startDestination="@id/inicioFragment2">
+    <fragment
+        android:id="@+id/inicioFragment2"
+        android:name="com.mvgp.whereiwatch.inicio.InicioFragment"
+        android:label="inicio_fragment"
+        tools:layout="@layout/inicio_fragment" >
+        <action
+            android:id="@+id/action_inicioFragment2_to_popularFragment"
+            app:destination="@id/popularFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/popularFragment"
+        android:name="com.mvgp.whereiwatch.popular.PopularFragment"
+        android:label="popular_fragment"
+        tools:layout="@layout/popular_fragment" />
+</navigation>

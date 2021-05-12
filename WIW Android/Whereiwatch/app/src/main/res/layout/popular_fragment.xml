@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".popular.PopularFragment">
+
+    <SearchView
+        android:id="@+id/pop_searchView"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:iconifiedByDefault="false"
+        android:inputType="text"
+        android:queryHint="Buscar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/primaryLightColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pop_searchView">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_sites_pop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ProgressBar
+            android:id="@+id/ProgressbarPopSites"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="71dp"
+            android:layout_height="73dp"
+            android:indeterminateDrawable="@drawable/progress_icon"
+            app:layout_constraintBottom_toBottomOf="@+id/recycler_sites_pop"
+            app:layout_constraintEnd_toEndOf="@+id/recycler_sites_pop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/recycler_sites_pop" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_peliculas_pop"
+        android:layout_width="match_parent"
+        android:layout_height="582dp"
+        android:background="@color/secondaryColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" >
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <ProgressBar
+        android:id="@+id/progressbarPopPeliculas"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="108dp"
+        android:layout_height="113dp"
+        android:layout_marginTop="224dp"
+        android:indeterminateDrawable="@drawable/progress_icon"
+        app:layout_constraintEnd_toEndOf="@+id/recycler_peliculas_pop"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

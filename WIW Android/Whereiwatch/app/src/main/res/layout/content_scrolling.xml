@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    style="@style/Theme.Whereiwatch"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".pelicula.PeliculaActivity"
+    tools:showIn="@layout/activity_pelicula">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="673dp"
+        android:background="@color/secondaryColor"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="1dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/appCompatTextView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sinopsis"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/sinopsis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:layout_marginTop="8dp"
+            android:text="@string/large_text"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appCompatTextView2" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/wherefind_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="¿Donde lo puedo ver?"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sinopsis" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_temp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Comenta y puntua"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recycler_sites_pelicula" />
+
+        <RatingBar
+            android:id="@+id/peliculaRatingBar"
+            android:layout_width="192dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="12dp"
+            android:isIndicator="false"
+            android:max="4"
+            android:numStars="4"
+            android:progressBackgroundTint="@color/startColorDisable"
+            android:progressTint="@color/startColorEnabled"
+            android:rating="0"
+            android:scaleX="1"
+            android:scaleY="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_temp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_sites_pelicula"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/primaryLightColor"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/wherefind_text" />
+
+        <EditText
+            android:id="@+id/editTextMultiPelicula"
+            android:layout_width="378dp"
+            android:layout_height="174dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="¿Que te ha parecido?"
+            android:inputType="textMultiLine"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/peliculaRatingBar" />
+
+        <Button
+            android:id="@+id/send_cooment_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="302dp"
+            android:layout_marginEnd="20dp"
+            android:text="Enviar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextMultiPelicula" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_temporadas"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewComments" />
+
+        <ProgressBar
+            android:id="@+id/progressBarSites"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="75dp"
+            android:layout_height="71dp"
+            android:indeterminateDrawable="@drawable/progress_icon"
+            app:layout_constraintBottom_toBottomOf="@+id/recycler_sites_pelicula"
+            app:layout_constraintEnd_toEndOf="@+id/recycler_sites_pelicula"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/recycler_sites_pelicula" />
+
+        <TextView
+            android:id="@+id/textViewComments"
+            android:layout_width="369dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="23dp"
+            android:text="Ultimos comentarios"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/send_cooment_button" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

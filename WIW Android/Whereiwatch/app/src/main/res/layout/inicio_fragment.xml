@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/secondaryColor"
+    android:layout_height="match_parent"
+    tools:context=".inicio.InicioFragment">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_more_recom"
+        android:layout_width="match_parent"
+        android:layout_height="516dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inicio_top" />
+
+    <ImageView
+        android:id="@+id/inicio_top"
+        android:layout_width="match_parent"
+        android:layout_height="215dp"
+        android:background="#E6600000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="506dp"
+        android:layout_height="332dp"
+        android:layout_marginBottom="496dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/dec001"
+        app:layout_constraintBottom_toBottomOf="@+id/recycler_more_recom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/inicio_recycler_horizontal_mov"
+        android:layout_width="319dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="64dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/inicio_top"
+        app:layout_constraintStart_toStartOf="@+id/inicio_top"
+        app:layout_constraintTop_toTopOf="@id/inicio_top" />
+
+    <ProgressBar
+        android:id="@+id/topProgressbar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+
+        android:indeterminateDrawable="@drawable/progress_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/inicio_recycler_horizontal_mov"
+        app:layout_constraintEnd_toEndOf="@+id/inicio_recycler_horizontal_mov"
+        app:layout_constraintStart_toStartOf="@+id/inicio_recycler_horizontal_mov"
+        app:layout_constraintTop_toTopOf="@+id/inicio_recycler_horizontal_mov" />
+
+    <ProgressBar
+        android:id="@+id/bottomProgressbar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+
+        android:indeterminateDrawable="@drawable/progress_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/recycler_more_recom"
+        app:layout_constraintVertical_bias="0.34" />
+
+    <TextView
+        android:id="@+id/text_also_recomm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="También te recomendamos"
+        android:textColor="@color/primaryTextColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inicio_top" />
+
+    <TextView
+        android:id="@+id/recomm_films"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Recomendados de hoy"
+        android:textColor="@color/primaryTextColor"
+        app:layout_constraintBottom_toTopOf="@+id/inicio_recycler_horizontal_mov"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.355" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

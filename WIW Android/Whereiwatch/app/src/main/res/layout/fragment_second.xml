@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".onboarding.SecondFragmentOnBoard">
+
+
+    <Button
+        android:id="@+id/buttonNextSecond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="289dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="39dp"
+        android:text="Finalizar"
+        android:backgroundTint="@color/secondaryColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <RatingBar
+        android:id="@+id/ratingBar2"
+        android:layout_width="194dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="131dp"
+        android:max="4"
+        android:numStars="4"
+        android:progressBackgroundTint="@color/startColorDisable"
+        android:progressTint="@color/startColorEnabled"
+        android:rating="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="325dp"
+        android:background="@color/primaryColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="321dp"
+        android:layout_height="108dp"
+        android:layout_marginTop="68dp"
+        android:text="Puntúa y comenta tu serie favorita"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine"
+        android:layout_width="258dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="141dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Comenta"
+        android:inputType="textMultiLine"
+        android:text="Esta temporada es espectacular!"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBar2" />
+
+    <Button
+        android:id="@+id/button_secondfrag"
+        android:layout_width="92dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="230dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="89dp"
+        android:text="Enviar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

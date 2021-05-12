@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "638714934951",
+    "project_id": "whereiwatch-ddf86",
+    "storage_bucket": "whereiwatch-ddf86.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:638714934951:android:612a73edcd8c781f3acd82",
+        "android_client_info": {
+          "package_name": "com.mvgp.whereiwatch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "638714934951-jrg81f835m1jr2mfjm6e3bpbpbi0rua1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9cSFmYQZSDfwhHac-fP5RBaWWj1dXg0w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "638714934951-jrg81f835m1jr2mfjm6e3bpbpbi0rua1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
