@@ -107,8 +107,7 @@ Arreglando problemas
 28 Apr 2021   
 Problemas con obtención de datos y a la hora de mostrarlos adecuadamente   
 ○ Arreglando problemas a la hora de sacar lista de vistos y pendiente en el viewmodel de la lista.   
-
-APP WEB REACT    
+  
 Aprendiendo React   
 29 Apr 2021   
 Aprendiendo React para crear la web de administración   
