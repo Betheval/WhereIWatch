@@ -1,5 +1,6 @@
 # WhereIWatch Aplicación Móvil
 # Vídeo Checkpoint
+https://youtu.be/DiEdBCEmzj0
   
 # APK
 Creado y probado en Pixel 3 API 27  
