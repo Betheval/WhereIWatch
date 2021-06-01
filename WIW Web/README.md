@@ -1,1 +1,3 @@
-# WhereIWatch
+# WhereIWatch web de administración
+### Descripción
+Web hecha en React para la administración de peliculas, usuarios, noticias...
