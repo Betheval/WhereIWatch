@@ -29,6 +29,12 @@
 * [Android App](https://github.com/BeTheVal/WhereIWatch/tree/main/WIW%20Android)
 * [Web](https://github.com/BeTheVal/WhereIWatch/tree/main/WIW%20Web)
 
+## Presentación PDF
+
+## Tutorial
+
+## Video presentación
+
 
 ## Diario
 Puedes entrar para ver un timeline
