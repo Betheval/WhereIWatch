@@ -30,7 +30,7 @@
 * [Web](https://github.com/BeTheVal/WhereIWatch/tree/main/WIW%20Web)
 
 ## Presentación PDF
-[PRESENTACIONPDF](https://github.com/BeTheVal/WhereIWatch/blob/main/WIW_Presentation.pdf)
+[PDF](https://github.com/BeTheVal/WhereIWatch/blob/main/WIW_Presentation.pdf)
 
 ## Tutorial
 
