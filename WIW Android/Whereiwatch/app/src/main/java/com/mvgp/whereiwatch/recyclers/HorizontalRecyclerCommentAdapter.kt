@@ -41,7 +41,7 @@ class HorizontalRecyclerCommentAdapter: ListAdapter<Comentario, HorizontalRecycl
 
         fun bind (coment: Comentario){
             comentario.text = coment.comentario
-            ratingBar.numStars = coment.puntuacion.toInt()
+            ratingBar.rating = coment.puntuacion.toFloat()
             comentarista.text = coment.comentarista
 
         }

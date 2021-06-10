@@ -1,6 +1,5 @@
 package com.mvgp.whereiwatch.recyclers
 
-import android.media.Image
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,32 +8,10 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.mvgp.whereiwatch.R
-import com.mvgp.whereiwatch.models.Noticia
-import com.mvgp.whereiwatch.models.Pelicula
 import com.mvgp.whereiwatch.models.Sitio
 import com.squareup.picasso.Picasso
 
-class VerticalRecyclerSitios: ListAdapter<Sitio, VerticalRecyclerSitios.ViewHolder>(DiffCallback){
-
-
-    inner class ViewHolder( val view: View) : RecyclerView.ViewHolder(view) {
-        val logo = view.findViewById<ImageView>(R.id.logo_site)
-        fun bind(sitio: Sitio) {
-            Picasso.get()
-                .load(sitio.logo)
-                .resize(30,30)
-                .into(logo)
-
-            view.setOnClickListener{
-                if (::onItemClickListener.isInitialized){
-                    onItemClickListener(sitio)
-                }
-            }
-
-        }
-
-
-    }
+class VerticalRecyclerSitiosPop : ListAdapter<Sitio, VerticalRecyclerSitiosPop.ViewHolder>(DiffCallback) {
 
     companion object DiffCallback: DiffUtil.ItemCallback<Sitio>(){
         override fun areItemsTheSame(oldItem: Sitio, newItem: Sitio): Boolean {
@@ -46,7 +23,10 @@ class VerticalRecyclerSitios: ListAdapter<Sitio, VerticalRecyclerSitios.ViewHold
         }
 
     }
-    lateinit var onItemClickListener: (Sitio) -> Unit
+
+    inner class ViewHolder(val view: View): RecyclerView.ViewHolder(view) {
+        val logo = view.findViewById<ImageView>(R.id.logo_site)
+    }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.item_sitios, parent, false)
@@ -55,6 +35,11 @@ class VerticalRecyclerSitios: ListAdapter<Sitio, VerticalRecyclerSitios.ViewHold
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val sitio = getItem(position)
-        holder.bind(sitio)
+        Picasso.get()
+            .load(sitio.logo)
+            .resize(30,30)
+            .into(holder.logo)
     }
+
+
 }

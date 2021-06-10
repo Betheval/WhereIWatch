@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:backgroundTint="@color/black"
-    android:background="@color/white"
+
+    android:background="@color/grey"
     android:orientation="vertical"
     tools:context=".list.ListFragment">
 
@@ -48,9 +48,10 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_mylist"
-        android:layout_width="413dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
         android:background="@color/secondaryColor"
-        android:layout_height="571dp"
+        android:layout_height="420dp"
         />
 
 

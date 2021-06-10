@@ -89,4 +89,17 @@ class PopularViewModel(application: Application) : AndroidViewModel(application)
 
     }
 
+
+    /**
+     * Filtra la lista de peliculas por sitios
+     */
+    fun filtraPorSitios(id: Long) {
+        _peliculasPopularesList.value = data.value
+       val filteredList =  _data.value?.filter { pel -> pel.sitios.contains(id) }
+        if (filteredList != null) {
+            _peliculasPopularesList.value = filteredList.toMutableList()
+        }
+
+    }
+
 }

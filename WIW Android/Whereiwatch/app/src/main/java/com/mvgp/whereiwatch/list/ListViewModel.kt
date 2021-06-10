@@ -80,7 +80,7 @@ class ListViewModel(application: Application) : AndroidViewModel(application) {
      *
      * Obtiene la uid del usuario
      */
-    private fun getUid(application: Application): String? {
+     fun getUid(application: Application): String? {
         val preferences: SharedPreferences = application.getSharedPreferences(
             PREFSKEY,
             AppCompatActivity.MODE_PRIVATE
@@ -154,7 +154,7 @@ class ListViewModel(application: Application) : AndroidViewModel(application) {
     /**
      * Pide todas las peliculas y las guarda en una lista
      */
-     fun fetchPeliculas(application: Application) {
+    fun fetchPeliculas(application: Application) {
         uid = getUid(application).toString()
         frstore.collection("peliculas").get().addOnSuccessListener { result ->
             for (doc in result) {
@@ -162,7 +162,6 @@ class ListViewModel(application: Application) : AndroidViewModel(application) {
                 allPeliculasList.add(pel)
             }
             getLists()
-
         }
     }
 

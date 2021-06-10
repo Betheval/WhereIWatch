@@ -55,7 +55,7 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_peliculas_pop"
         android:layout_width="match_parent"
-        android:layout_height="582dp"
+        android:layout_height="440dp"
         android:background="@color/secondaryColor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"

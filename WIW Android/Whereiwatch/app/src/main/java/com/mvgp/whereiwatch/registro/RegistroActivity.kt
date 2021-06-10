@@ -39,7 +39,7 @@ class RegistroActivity : AppCompatActivity() {
                     if (it.isSuccessful) {
                         val uid = fbAuth.uid
                         if (uid != null) {
-                            val user = Usuario(email, nombre, emptyList(), emptyList())
+                            val user = Usuario(email, nombre, emptyList(), emptyList(),false)
                             userRef.document(uid).set(user)
                             Snackbar.make(view, "Se ha registrado con exito", Snackbar.LENGTH_LONG)
                                 .show()

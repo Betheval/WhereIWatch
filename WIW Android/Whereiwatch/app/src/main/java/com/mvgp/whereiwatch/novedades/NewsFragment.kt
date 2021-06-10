@@ -32,36 +32,30 @@ class NewsFragment : Fragment() {
                               savedInstanceState: Bundle?): View? {
        val rootView =  inflater.inflate(R.layout.news_fragment, container, false)
 
-        val progressNewsSites = rootView.findViewById<ProgressBar>(R.id.progressbarNewsSites)
+
         val progressNewsNoticias = rootView.findViewById<ProgressBar>(R.id.progressbarNewsNoticias)
 
 
 
         //declaracion del recycler
-       val recyclerSites = rootView.findViewById<RecyclerView>(R.id.recycler_sites_news)
        val recyclerNews = rootView.findViewById<RecyclerView>(R.id.recycler_noticias)
 
         //Declaracion del layoutManager
-        recyclerSites.layoutManager = LinearLayoutManager(this.context,LinearLayoutManager.HORIZONTAL,false)
+
         recyclerNews.layoutManager = LinearLayoutManager(this.context,LinearLayoutManager.VERTICAL,false)
 
 
         //declaracion del adaptador
-        val adapterSites = VerticalRecyclerSitios()
+
         val adapterNews = HorizontalRecyclerNewsAdapter()
 
-        recyclerSites.adapter = adapterSites
+
         recyclerNews.adapter = adapterNews
 
 
 
         viewModel = ViewModelProvider(this).get(NewsViewModel::class.java)
 
-        viewModel.sitiosList.observe(viewLifecycleOwner, Observer {
-            adapterSites.submitList(it)
-            progressNewsSites.visibility = View.GONE
-
-        })
 
         viewModel.noticiasList.observe(viewLifecycleOwner, Observer {
             adapterNews.submitList(it)
@@ -78,10 +72,5 @@ class NewsFragment : Fragment() {
         return rootView
     }
 
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(NewsViewModel::class.java)
-        // TODO: Use the ViewModel
-    }
 
 }

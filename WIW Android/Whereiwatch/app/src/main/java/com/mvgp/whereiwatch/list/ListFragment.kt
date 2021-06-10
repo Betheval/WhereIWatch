@@ -111,9 +111,6 @@ class ListFragment : Fragment() {
         })
 
 
-
-
-
         return rootView
     }
 

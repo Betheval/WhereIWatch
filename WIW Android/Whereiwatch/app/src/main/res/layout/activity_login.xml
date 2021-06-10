@@ -31,15 +31,15 @@
         android:layout_width="260dp"
         android:layout_height="53dp"
         android:layout_marginTop="32dp"
-        app:layout_constraintEnd_toEndOf="@+id/imageView7"
-        app:layout_constraintStart_toStartOf="@+id/imageView7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView7">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Email"
-            android:text="miguelgutp@gmail.com"/>
+            android:text="miguelgutp@gmail.com" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -47,17 +47,16 @@
         android:layout_width="260dp"
         android:layout_height="56dp"
         android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="@+id/textInputEmail"
-        app:layout_constraintStart_toStartOf="@+id/textInputEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputEmail">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Password"
-            android:text="123456789A"
             android:inputType="textPassword"
-            />
+            android:text="123456789A" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <ImageView

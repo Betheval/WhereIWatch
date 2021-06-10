@@ -7,18 +7,16 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
-import android.widget.ImageView
+import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import com.google.firebase.firestore.FirebaseFirestore
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.mvgp.whereiwatch.inicio.InicioFragment
 import com.mvgp.whereiwatch.list.ListFragment
-import com.mvgp.whereiwatch.models.Pelicula
 import com.mvgp.whereiwatch.novedades.NewsFragment
-import com.mvgp.whereiwatch.pelicula.PeliculaViewModel
 import com.mvgp.whereiwatch.popular.PopularFragment
 import kotlinx.android.synthetic.main.activity_login.*
 
@@ -112,8 +110,8 @@ class MainActivity : AppCompatActivity() {
                 true
             }
             R.id.salir_button -> {
-                finishAffinity()
-                System.exit(0)
+                dialogToClose()
+
                 true
             }
             else -> super.onOptionsItemSelected(item)
@@ -127,6 +125,24 @@ class MainActivity : AppCompatActivity() {
         editor = settings.edit()
         editor.putString("uid", uid)
         editor.apply()
+    }
+
+    private fun dialogToClose(){
+        val alertDialogBuilder = AlertDialog.Builder(this)
+        alertDialogBuilder.setTitle("Salir")
+        alertDialogBuilder.setMessage("¿Seguro que desea salir?")
+        alertDialogBuilder.setPositiveButton(android.R.string.ok) { dialog, which ->
+            finishAffinity()
+            System.exit(0)
+        }
+
+        alertDialogBuilder.setNegativeButton(android.R.string.cancel) { dialog, which ->
+
+        }
+
+        alertDialogBuilder.show()
+
+
     }
 
 }

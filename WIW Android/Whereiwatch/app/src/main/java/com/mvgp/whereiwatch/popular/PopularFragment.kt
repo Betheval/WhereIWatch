@@ -17,6 +17,7 @@ import com.mvgp.whereiwatch.pelicula.PeliculaActivity
 import com.mvgp.whereiwatch.R
 import com.mvgp.whereiwatch.recyclers.HorizontalRecyclerAdapter
 import com.mvgp.whereiwatch.recyclers.VerticalRecyclerSitios
+import com.mvgp.whereiwatch.recyclers.VerticalRecyclerSitiosPop
 
 class PopularFragment : Fragment() {
 
@@ -52,6 +53,11 @@ class PopularFragment : Fragment() {
 
         val adapterPeliculasPopulares = HorizontalRecyclerAdapter()
         recycler_pops.adapter = adapterPeliculasPopulares
+
+
+        adapterSites.onItemClickListener = {
+            viewModel.filtraPorSitios(it.id)
+        }
 
 
         //Declaracion onclick

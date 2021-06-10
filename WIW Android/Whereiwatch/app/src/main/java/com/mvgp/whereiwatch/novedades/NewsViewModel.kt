@@ -23,11 +23,6 @@ class NewsViewModel : ViewModel() {
         fetchNoticas()
     }
 
-
-    /**
-     *
-     * Pide las noticias a firebase y las guarda en una lista
-     */
     private fun fetchNoticas() {
         val nuevasList = mutableListOf<Noticia>()
         frstore.collection("noticias").get().addOnSuccessListener { result ->
@@ -41,9 +36,6 @@ class NewsViewModel : ViewModel() {
 
     }
 
-    /**
-     * Pide los sitios a Firebase y los guarda en una lista
-     */
     private fun fetchSitios(){
         val sitiosList = mutableListOf<Sitio>()
         frstore.collection("sitios").get().addOnSuccessListener { result ->

@@ -176,7 +176,7 @@ class PeliculaViewModel(application: Application) : AndroidViewModel(application
      */
     fun addComment(pelicula: Pelicula, rating:Float,nombre:String, contenido:String, adapter:HorizontalRecyclerCommentAdapter) {
 
-        val coment:Comentario  = Comentario(contenido,usuario.nombre,pelicula.id,rating.toLong(), Timestamp.now() )
+        val coment = Comentario(contenido,usuario.nombre,pelicula.id,rating.toLong(), Timestamp.now() )
         commentsRef.add(coment)
         fetchComentarios(pelicula)
         adapter.notifyDataSetChanged()

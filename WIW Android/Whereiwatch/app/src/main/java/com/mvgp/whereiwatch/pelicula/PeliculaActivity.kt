@@ -1,17 +1,22 @@
 package com.mvgp.whereiwatch.pelicula
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.webkit.WebView
 import android.widget.*
 import com.google.android.material.appbar.CollapsingToolbarLayout
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.ListFragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.snackbar.Snackbar
 import com.mvgp.whereiwatch.R
+import com.mvgp.whereiwatch.list.ListViewModel
 import com.mvgp.whereiwatch.models.Pelicula
 import com.mvgp.whereiwatch.recyclers.HorizontalRecyclerCommentAdapter
 import com.mvgp.whereiwatch.recyclers.VerticalRecyclerSitios
@@ -33,15 +38,29 @@ class PeliculaActivity : AppCompatActivity() {
         val textComment = findViewById<EditText>(R.id.editTextMultiPelicula)
         val sendCommentButton = findViewById<Button>(R.id.send_cooment_button)
         val addVistoButton = findViewById<Button>(R.id.button_add_visto)
-
         val addPendingButton = findViewById<Button>(R.id.button_add_pending)
+        val year = findViewById<TextView>(R.id.anio)
+        val director = findViewById<TextView>(R.id.director)
 
 
-        //declaracion del adaptador
+
+
+        //declaracion del adaptador sitios
         val adapterSites = VerticalRecyclerSitios()
         recyclerSites.layoutManager =
             LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
         recyclerSites.adapter = adapterSites
+        // Onclick adaptador sitios
+
+        adapterSites.onItemClickListener = {
+            val uri:Uri = Uri.parse(it.enlace)
+            val enlace:String = uri.toString()
+            Toast.makeText(this,it.enlace,Toast.LENGTH_LONG).show()
+            val webview =  WebView(this.applicationContext)
+            webview.loadUrl(enlace)
+
+        }
+
 
         //Recycler comments
         recyclerComments.layoutManager =
@@ -59,6 +78,8 @@ class PeliculaActivity : AppCompatActivity() {
 
 
         if (pelicula != null) {
+            year.text = pelicula.anio
+            director.text = pelicula.director
             peliculaViewModel.fetchSitios(pelicula)
             peliculaViewModel.fetchListas()
             peliculaViewModel.fetchComentarios(pelicula)
@@ -86,6 +107,8 @@ class PeliculaActivity : AppCompatActivity() {
                     // lo quita
                     if (peliculaViewModel.isInVisto(pelicula)) {
                         peliculaViewModel.updateLists(pelicula, "V", "D")
+                        val lvm = ListViewModel(application)
+                        lvm.fetchPeliculas(application)
                         it.setBackgroundColor(resources.getColor(R.color.primaryColor))
                     }
 
