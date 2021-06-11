@@ -1,0 +1,21 @@
+.lista{
+    width: 100%;
+    height: 814px;
+    float: left;
+    background-color: #60000057;
+
+}
+.lista ul{
+margin-top: 25px;
+}
+
+.list-item{
+    list-style: none;
+    text-decoration: none;
+    margin-top: 10px;
+
+}
+.list-item p{
+    color: black;
+    text-align: left;
+}

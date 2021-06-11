@@ -1,0 +1,57 @@
+.container-usuarios{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.sidebar-usuarios{
+    float: left;
+    height: 100%;
+    width: 10%;
+}
+
+.form-usuarios{
+    width:30%;
+    display: flex;
+    flex-direction: column;
+    height: 520px;
+}
+
+.form-usuarios input {
+    margin-top: 10px;
+    width: 450px;
+    height: 50px;
+
+}
+
+.form-usuarios button {
+    margin-top: 10px;
+    height: 40px;
+    width: 460px;
+    color: white;
+    background-color: #600000;
+
+}
+
+.table-usuarios-container{
+    width: 60%;
+}
+
+.table-usuarios-container table{
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.table-usuarios-container table button{
+    background-color: #600000;
+    color: white;
+}
+
+@font-face {
+    font-family: roboto-light ;
+    src:local('src\fonts\Roboto\Roboto-Light.ttf');
+}
+@font-face {
+    font-family: roboto-regular ;
+    src:local('src\fonts\Roboto\Roboto-Regular.ttf');
+}

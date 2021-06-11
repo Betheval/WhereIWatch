@@ -1,0 +1,75 @@
+.sidebar-peliculas{
+    width: 10%;
+    height: 500px;
+    position: absolute;
+
+}
+.table-peliculas{
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 57%;
+    height: 520px;
+}
+.table-peliculas table{
+    margin-left: 10px;
+    width:100%;
+}
+.table-peliculas table button{
+    background-color: #600000;
+    color: white;
+}
+.container-peliculas{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.form-peliculas{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.form-peliculas button{
+    height: 40px;
+    background-color: #600000;
+    color: white;
+}
+
+
+.form-container{
+    text-align: center;
+}
+
+
+
+.list-item-pelicula{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid;
+    justify-content: flex-start;
+}
+
+.chart{
+    margin-left: 500px;
+    width: 500px;
+    height: 250px;
+}
+
+.row-buttom{
+    margin-left: 160px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 200px;
+}
+
+@font-face {
+    font-family: roboto-light ;
+    src:local('src\fonts\Roboto\Roboto-Light.ttf');
+}
+@font-face {
+    font-family: roboto-regular ;
+    src:local('src\fonts\Roboto\Roboto-Regular.ttf');
+}
