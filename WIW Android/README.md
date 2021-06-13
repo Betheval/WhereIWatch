@@ -24,9 +24,6 @@ https://gist.github.com/BeTheVal/be0138a6bc9a4b1cbb5bcb0ce57d9650
 ![](https://github.com/BeTheVal/WhereIWatch/blob/main/WIW%20Android/gifs/viewingFilms.gif)   
 ![](https://github.com/BeTheVal/WhereIWatch/blob/main/WIW%20Android/gifs/News.gif)   
 
-### Comentando una película
-![](https://github.com/BeTheVal/WhereIWatch/blob/main/WIW%20Android/gifs/login.gif)   
-
 ### Buscando películas
 ![](https://github.com/BeTheVal/WhereIWatch/blob/main/WIW%20Android/gifs/Searching.gif)   
 
