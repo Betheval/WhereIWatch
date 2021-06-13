@@ -14,15 +14,16 @@ https://gist.github.com/BeTheVal/be0138a6bc9a4b1cbb5bcb0ce57d9650
 # Tutorial con gifs   
 
 ### Login  
-![](https://github.com/BeTheVal/WhereIWatch/blob/main/WIW%20Android/gifs/splash.gif)   
-![](https://github.com/BeTheVal/WhereIWatch/blob/main/WIW%20Android/gifs/login.gif)   
+
+| ![](https://github.com/BeTheVal/WhereIWatch/blob/main/WIW%20Android/gifs/splash.gif)  | ![](https://github.com/BeTheVal/WhereIWatch/blob/main/WIW%20Android/gifs/login.gif)  |
+   
+   
 
 ### Añadiendo a listas de pendientes y vistos
 ![](https://github.com/BeTheVal/WhereIWatch/blob/main/WIW%20Android/gifs/addingDeletingLists.gif)  
 
 ### Detalles de película y noticia
-![](https://github.com/BeTheVal/WhereIWatch/blob/main/WIW%20Android/gifs/viewingFilms.gif)   
-![](https://github.com/BeTheVal/WhereIWatch/blob/main/WIW%20Android/gifs/News.gif)   
+| ![](https://github.com/BeTheVal/WhereIWatch/blob/main/WIW%20Android/gifs/viewingFilms.gif) | ![](https://github.com/BeTheVal/WhereIWatch/blob/main/WIW%20Android/gifs/News.gif)   
 
 ### Buscando películas
 ![](https://github.com/BeTheVal/WhereIWatch/blob/main/WIW%20Android/gifs/Searching.gif)   
