@@ -10,3 +10,5 @@ Este APK contiene los datos de un usuario en el login, se sobreentiende que es u
 
 # Bibliografía   
 https://gist.github.com/BeTheVal/be0138a6bc9a4b1cbb5bcb0ce57d9650
+
+# Tutorial con gifs   
