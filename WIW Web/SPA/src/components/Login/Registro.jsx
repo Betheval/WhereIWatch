@@ -29,6 +29,7 @@ const Registro = (props) => {
                 iddoc: doc.id,
                 ...doc.data()
            }))
+           console.log(arrayData)
            setUsuarios(arrayData)
        } catch (error) {
            console.log(error);
