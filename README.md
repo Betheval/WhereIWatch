@@ -32,10 +32,6 @@
 ## Presentación PDF
 [PDF](https://github.com/BeTheVal/WhereIWatch/blob/main/WIW_Presentation.pdf)
 
-## Tutorial
-
-## Video presentación
-
 
 ## Diario
 Puedes entrar para ver un timeline
