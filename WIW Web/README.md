@@ -12,7 +12,7 @@ Compuesto por componentes con la capacidad para hacer CRUD a las diferentes cate
 
 
 # Video presentación
-
+https://youtu.be/AYkR7eDK1k8
 
 # Tutorial con gifs
 ### Landing page   
