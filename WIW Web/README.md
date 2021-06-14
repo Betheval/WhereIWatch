@@ -15,3 +15,13 @@ Compuesto por componentes con la capacidad para hacer CRUD a las diferentes cate
 
 
 # Tutorial con gifs
+### Landing page   
+![](https://github.com/BeTheVal/WhereIWatch/blob/main/WIW%20Web/gifs/Landing.gif)
+### Login   
+![](https://github.com/BeTheVal/WhereIWatch/blob/main/WIW%20Web/gifs/LoginWeb.gif)
+### Editar y Añadir pelicula
+| ![](https://github.com/BeTheVal/WhereIWatch/blob/main/WIW%20Web/gifs/Editar_Pel%C3%ADcula.gif) | ![]()
+### Editar usuario
+![](https://github.com/BeTheVal/WhereIWatch/blob/main/WIW%20Web/gifs/editar_usuario.gif)
+### Añadir noticia
+![](https://github.com/BeTheVal/WhereIWatch/blob/main/WIW%20Web/gifs/crear_noticia.gif)
