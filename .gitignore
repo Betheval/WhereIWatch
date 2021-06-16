@@ -83,3 +83,7 @@ lint/generated/
 lint/outputs/
 lint/tmp/
 # lint/reports/
+WIW Web/SPA/.firebaserc
+WIW Web/SPA/firebase.json
+WIW Web/SPA/firestore.indexes.json
+WIW Web/SPA/firestore.rules
