@@ -9,6 +9,7 @@ import Peliculas  from './components/Peliculas/Peliculas';
 import {auth} from './firebase'
 import Usuarios from './components/Usuarios/Usuarios';
 import Noticias from './components/Noticias/Noticias';
+import './App.css'
 function App() {
 
   const [firebaseUser , setFirebaseUser] = React.useState(false)

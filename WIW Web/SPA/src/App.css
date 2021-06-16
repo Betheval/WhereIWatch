@@ -1,0 +1,12 @@
+@media screen and (max-width: 1164px) {
+    .cointainer-cards{
+        flex-direction: column;
+        height: 100%;
+        background-color: black;
+    }
+    .card{
+        height: 670px;
+        align-self: center;
+        width: 100%;
+    }
+}
